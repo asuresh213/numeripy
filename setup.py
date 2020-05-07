@@ -1,14 +1,14 @@
 from distutils.core import setup
 setup(
-  name = 'NApy',        
-  packages = ['NApy'],
+  name = 'numeripy',
+  packages = ['numeripy', 'numeripy.ODE_solvers', 'numeripy.matrix_methods'],
   version = '0.1',
   license='MIT',
   description = 'Python package for numerical analysis. Includes a variety of niche ode solvers and iterative matrix methods (typically encountered in a standard senior year course in numerical analysis)',   # Give a short description about your library
   author = 'Arun Suresh',
   author_email = 'ab251098@gmail.com',
-  url = 'https://github.com/asuresh213/NApy',
-  download_url = 'https://github.com/asuresh213/NApy/archive/v_01.tar.gz',
+  url = 'https://github.com/asuresh213/numeripy',
+  download_url = 'https://github.com/asuresh213/numeripy/archive/v_01.tar.gz',
   keywords = ['ODE Solvers', 'Numerical', 'Numerical Analysis', 'Optimization',
               'Matrix Methods', 'ODE', 'Differential Equations', 'Iterative matrix methods'],
   install_requires=[
@@ -21,7 +21,6 @@ setup(
     'Intended Audience :: Developers',
     'Topic :: Software Development :: Build Tools',
     'License :: OSI Approved :: MIT License',
-    'Programming Language :: Python :: 2.7'
     'Programming Language :: Python :: 3',
     'Programming Language :: Python :: 3.4',
     'Programming Language :: Python :: 3.5',
