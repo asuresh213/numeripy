@@ -46,6 +46,7 @@ numeripy also comes with some post-processing tools for numerical ODE solutions.
 
 ## Getting numeripy
 (Assuming, the user already has pip installed - otherwise, follow [this][dsf] first to get pip)
+
 Getting numeripy is as simple as opening command prompt and entering
 ```
 $ pip install numeripy
