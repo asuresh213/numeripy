@@ -69,7 +69,7 @@ $ pip install numeripy
 `numeripy` plans to include a subdirectory containing standard optimization algorithms such as Gradient descent, Gradient descent for higher order multidimensional problems, Secant method, Line search, Newton's method and a few others.
 
 #### Example problem set
-`numeripy` also plans to include a folder with many example problems that the user is invited to try out. The Examples folder is located along with the user's `numeripy` installation. (This update will be released shortly).
+`numeripy` also plans to include a folder with many example problems that the user is invited to try out. The Examples folder will be located along with the user's `numeripy` installation. (This update will be released shortly).
 
 
 [dsf]: <https://pip.pypa.io/en/stable/installing/>
