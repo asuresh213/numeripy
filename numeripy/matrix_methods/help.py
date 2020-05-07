@@ -13,8 +13,9 @@ dict2 = {
 }
 
 def help(kw = " "):
-  print("Method located in NApy.matrix_methods \\n")
+
   if((kw.lower()).replace(" ", "") in dict2["gebs_key"]):
+    print("Method located in numeripy.matrix_methods \\n")
     Notes = '''
     Gaussian Elimination - Backward Substitution
       function name: gaussian_elim
@@ -33,6 +34,7 @@ def help(kw = " "):
 
 
   if((kw.lower()).replace(" ", "") in dict2["fact_key"]):
+    print("Method located in numeripy.matrix_methods \\n")
     Notes = '''
     Factorization methods:
       function name: matrix_fact
@@ -51,6 +53,7 @@ def help(kw = " "):
     print(Notes)
 
   if((kw.lower()).replace(" ", "") in dict2["crout_key"]):
+    print("Method located in numeripy.matrix_methods \\n")
     Notes = '''
     Crout mathod
       function name: crout
@@ -64,6 +67,7 @@ def help(kw = " "):
     print(Notes)
 
   if((kw.lower()).replace(" ", "") in dict2["iter_key"]):
+    print("Method located in numeripy.matrix_methods \\n")
     Notes =  '''
     Iterative matrix methods
       function name: mat_iter
@@ -82,6 +86,7 @@ def help(kw = " "):
     print(Notes)
 
   if((kw.lower()).replace(" ", "") in dict2["mult_key"]):
+    print("Method located in numeripy.matrix_methods \\n")
     Notes = '''
     Matrix multiplication
       function name: Matmul
@@ -94,6 +99,7 @@ def help(kw = " "):
     print(Notes)
 
   if((kw.lower()).replace(" ", "") in dict2["det_key"]):
+    print("Method located in numeripy.matrix_methods \\n")
     Notes = '''
     Determinant
       function name: determinant

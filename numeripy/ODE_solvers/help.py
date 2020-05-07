@@ -20,8 +20,8 @@ dict1= {
 
 
 def help(kw = " "):
-    print("Method located in NApy.ODE_solvers \\n")
     if((kw.lower()).replace(" ", "") in dict1["Euler_key"]):
+        print("Method located in numeripy.ODE_solvers \\n")
         Notes_euler = '''
         Euler's method:
             Function Name: Euler
@@ -42,6 +42,7 @@ def help(kw = " "):
         print(Notes_euler)
 
     if((kw.lower()).replace(" ", "") in dict1["meuler_key"]):
+        print("Method located in numeripy.ODE_solvers \\n")
         Notes_m_euler = '''
         Modified Euler's method:
             Function Name: modified_euler
@@ -63,6 +64,7 @@ def help(kw = " "):
 
 
     if((kw.lower()).replace(" ", "") in dict1["AB_key"]):
+        print("Method located in numeripy.ODE_solvers \\n")
         Notes = '''
         Adam Bashforth m step method:
             Function Name: adam_bashforth
@@ -90,6 +92,7 @@ def help(kw = " "):
         print(Notes)
 
     if((kw.lower()).replace(" ", "") in dict1["pc_key"]):
+        print("Method located in numeripy.ODE_solvers \\n")
         Notes = '''
         Does not work on Atom (involves user input - run from console).
 
@@ -128,6 +131,7 @@ def help(kw = " "):
         print(Notes)
 
     if((kw.lower()).replace(" ", "") in dict1["RK_key"]):
+        print("Method located in numeripy.ODE_solvers \\n")
         Notes = '''
         RK for systems (of m equations):
             Note: This function was heavily influenced by the style of Dr. Andasari (BU)
@@ -254,6 +258,7 @@ def help(kw = " "):
         print(Notes)
 
     if((kw.lower()).replace(" ", "") in dict1["rkf_key"]):
+        print("Method located in numeripy.ODE_solvers \\n")
         Notes = '''
         Runge-Kutta Fehlberg:
             Function Name: RKF
@@ -276,6 +281,7 @@ def help(kw = " "):
         print(Notes)
 
     if((kw.lower()).replace(" ", "") in dict1["taylor_key"]):
+        print("Method located in numeripy.ODE_solvers \\n")
         Notes = '''
         nth order Taylor method (n = 2, 3, 4, 5):
             Function Name: Taylor
