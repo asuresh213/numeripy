@@ -1,6 +1,6 @@
-# numeripy
+# Numeripy
 
-numeripy is a numerical methods package that includes various numerical methods often encountered in senior year numerical analysis + Optimization courses. It is written with the motivation to provide flexibility to the user in selecting a certain scheme and having a good precision control. It also helps one compare and contrast the performances of different schemes for a certain problem. Another potential avenue of use would be for pedagogical purposes - with a pre-compiled library, real time analysis of rather involved methods in class is made possible
+Numeripy is a numerical methods package that includes various numerical methods often encountered in senior year Numerical Analysis + Optimization courses. It is written with the motivation to provide flexibility to the user in selecting a certain scheme and having a good precision control. It also helps one compare and contrast the performances of different schemes for a certain problem. Another potential avenue of use would be for pedagogical purposes - with a pre-compiled library, real time analysis of rather involved methods in class is made possible
 
 # Ver 0.1 comes with
 ### ODE solvers
