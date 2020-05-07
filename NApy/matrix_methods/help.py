@@ -13,6 +13,7 @@ dict2 = {
 }
 
 def help(kw = " "):
+  print("Method located in NApy.matrix_methods \\n")
   if((kw.lower()).replace(" ", "") in dict2["gebs_key"]):
     Notes = '''
     Gaussian Elimination - Backward Substitution

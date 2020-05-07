@@ -20,6 +20,7 @@ dict1= {
 
 
 def help(kw = " "):
+    print("Method located in NApy.ODE_solvers \\n")
     if((kw.lower()).replace(" ", "") in dict1["Euler_key"]):
         Notes_euler = '''
         Euler's method:
