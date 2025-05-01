@@ -56,7 +56,7 @@ numeripy also comes with some post-processing tools for numerical ODE solutions.
     numeripy.PDE_FD
   #### Methods included
   1 dimensional PDE (finite difference) solvers for the heat-equation 
-  $$u_t = u_xx + f(x,t)$$
+  $$u_t = u_{xx} + f(x,t)$$
   - Time-explicit **finite difference** solvers with explicit time evolution support via 
     - Euler's method
     - Runge-Kutta 2-step
