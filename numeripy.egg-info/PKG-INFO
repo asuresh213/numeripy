@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: numeripy
+Version: 0.1.6
+Summary: Python package for numerical analysis. Includes a variety of niche ode solvers and iterative matrix methods (typically encountered in a standard senior year course in numerical analysis)
+Home-page: https://github.com/asuresh213/numeripy
+Download-URL: https://github.com/asuresh213/numeripy/archive/v0.1.2.tar.gz
+Author: Arun Suresh
+Author-email: ab251098@gmail.com
+License: MIT
+Keywords: ODE Solvers,Numerical,Numerical Analysis,Optimization,Matrix Methods,ODE,Differential Equations,Iterative matrix methods
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: tabulate
+Requires-Dist: matplotlib
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
