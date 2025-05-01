@@ -11,7 +11,9 @@ dict1= {
                 "thirdordertaylor", "4thordertaylor", "fourthordertaylor",
                 "nthordertaylor", "taylorsmethod"],
 "meuler_key" : ["modifiedeuler", "meuler", "modifiedforwardeuler", "eulermodified",
-                "eulerm", "modifiedeulermethod"]
+                "eulerm", "modifiedeulermethod"],
+"bvp_key" : ["boundaryvalueproblem", "bvp", "boundaryvalueproblems", "implicitbvp", 
+             "finitedifferencebvp", "finitedifferenceode"]
 }
 
 
@@ -321,5 +323,48 @@ def help(kw = " "):
 
         '''
         print(Notes)
+    if((kw.lower()).replace(" ", "") in dict1["bvp_key"]):
+        print("Method located in numeripy.ODE_solvers \\n")
+        Notes_bvp = '''
+        Finite Difference method for linear second order BVP of the form:
+            y'' = p(t)y' + q(t)y + r(t)
+            y(a) = alpha  and y(b) = beta
+            where p(t), q(t), r(t) are continuous functions on [a,b]
+            and alpha, beta are constants.
+
+            Function Name: ODE_BVP_Linear
+            Inputs: p(t), q(t), r(t): Coefficient functions of the BVP
+                    t: time axis (array of points)
+                    h: stepsize
+                    alpha: Initial Condition
+                    beta: Final Condition
+                    N: number of interior points (N+2 = total points)
+                    h: stepsize
+
+           Outputs: t, y where
+                y: solution array
+                t: time axis
+            
+            Example usage:
+
+                def p(t):
+                    return 0 * t
+                def q(t):
+                    return -1 * np.ones_like(t)
+                def r(t):
+                    return np.sin(t) 
+                
+                a = 0.0
+                b = np.pi
+                alpha = 0.0
+                beta = 1.0
+                N = 100
+                h = (b - a) / (N + 1)
+                t = np.linspace(a, b, N + 2)
+                t, y = ODE_BVP_Linear(p, q, r, t, h, alpha, beta, N)             
+        '''
+        print(Notes_bvp)
+
+    
 
     return 0

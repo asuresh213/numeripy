@@ -7,5 +7,6 @@ from .Predictor_Corrector import *
 from .RK import *
 from .RKF import *
 from .Taylor import *
+from .FD_BVP import *
 from .Modified_Euler import *
 from .help import *

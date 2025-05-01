@@ -1,8 +1,8 @@
 from distutils.core import setup
 setup(
   name = 'numeripy',
-  packages = ['numeripy', 'numeripy.ODE_solvers', 'numeripy.matrix_methods'],
-  version = '0.1.2',
+  packages = ['numeripy', 'numeripy.ODE_solvers', 'numeripy.matrix_methods', numeripy.PDE_FD],
+  version = '0.1.6',
   license='MIT',
   description = 'Python package for numerical analysis. Includes a variety of niche ode solvers and iterative matrix methods (typically encountered in a standard senior year course in numerical analysis)',   # Give a short description about your library
   author = 'Arun Suresh',

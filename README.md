@@ -2,10 +2,11 @@
 
 Numeripy is a numerical methods package that includes various numerical methods often encountered in senior year Numerical Analysis + Optimization courses. It is written with the motivation to provide flexibility to the user in selecting a certain scheme and having a good precision control. It also helps one compare and contrast the performances of different schemes for a certain problem. Another potential avenue of use would be for pedagogical purposes - with a pre-compiled library, real time analysis of rather involved methods in class is made possible
 
-# Ver 0.1 comes with
+# Ver 0.1.6 comes with
 ### ODE solvers
     numeripy.ODE_solvers
  ##### Methods included
+ IVP solvers:
   - Euler
   - Modified Euler
   - Taylor (orders 2,3, 4 and 5)
@@ -21,6 +22,12 @@ Numeripy is a numerical methods package that includes various numerical methods 
     - Accomodates variable step size with
          - Predictor: 4 step Adam-Bashforth
          - Corrector: 3 step Adam-Moulton
+
+BVP solver:
+  - Implicit **finite difference** solver for second order linear ODE
+    of the form 
+    $$\frac{d^2 y}{dt^2} + p(t)\frac{dy}{dt} + q(t) = r(t)$$
+        
 
 ### Matrix methods
     numeripy.matrix_methods
@@ -43,6 +50,21 @@ Numeripy is a numerical methods package that includes various numerical methods 
 numeripy also comes with some post-processing tools for numerical ODE solutions.
   - `numeripy.Latexit()` creates latex formatted tables (when passed with array inputs)
   - `numeripy.plotit()` plots all the solutions (when passed with ODE solutions as inputs)    
+
+
+### 1-dimensional PDE solvers
+    numeripy.PDE_FD
+  #### Methods included
+  1 dimensional PDE (finite difference) solvers for the heat-equation 
+  $$u_t = u_xx + f(x,t)$$
+  - Time-explicit **finite difference** solvers with explicit time evolution support via 
+    - Euler's method
+    - Runge-Kutta 2-step
+    - Runge-Kutta 4-step
+
+  - Time-implicit **finite difference** solvers with implicit time evolution support via
+    - Implicit Euler
+    - Crank Nicholson
 
 ## Getting numeripy
 (Assuming, the user already has pip installed - otherwise, follow [this][dsf] first to get pip)
